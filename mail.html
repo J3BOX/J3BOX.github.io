@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 生产力工具导航</title>
+    <title>常用免费邮箱登录导航</title>
     <style>
-        /* 基础样式重置（与邮箱网页完全一致） */
+        /* 基础样式重置 */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             background-color: #f4f7f6;
@@ -34,7 +34,7 @@
             color: #2c3e50;
             margin-top: 2.5rem;
         }
-        /* 网格布局 */
+        /* 网格布局：自动适配手机和电脑屏幕 */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -66,6 +66,110 @@
             font-size: 0.9rem;
             margin-bottom: 1.5rem;
         }
-        /* 标签样式 (针对 AI 分类配置了清爽配色) */
+        /* 标签样式 */
         .badge {
             display: inline-block;
+            padding: 0.2rem 0.6rem;
+            font-size: 0.75rem;
+            border-radius: 12px;
+            align-self: center;
+            margin-bottom: 0.5rem;
+        }
+        .badge.domestic { background-color: #e8f4fd; color: #1976d2; }
+        .badge.intl { background-color: #fce4ec; color: #c2185b; }
+        .badge.privacy { background-color: #e8f5e9; color: #2e7d32; }
+        
+        /* 按钮样式 */
+        .btn {
+            display: block;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            padding: 0.7rem 1.2rem;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .btn:hover { background-color: #2980b9; }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #95a5a6;
+            font-size: 0.85rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>全球免费邮箱直达导航</h1>
+        <p>一站式安全直达各大主流电子邮箱官方登录页面</p>
+    </header>
+
+    <div class="container">
+        <!-- 国内邮箱板块 -->
+        <h2>国内常用邮箱</h2>
+        <div class="grid">
+            <div class="card">
+                <span class="badge domestic">国内</span>
+                <h3>网易 163 / 126 邮箱</h3>
+                <p>@163.com / @126.com</p>
+                <a href="https://mail.163.com/" target="_blank" rel="noopener noreferrer" class="btn">官方登录</a>
+            </div>
+            <div class="card">
+                <span class="badge domestic">国内</span>
+                <h3>QQ 邮箱 (Foxmail)</h3>
+                <p>@qq.com / @foxmail.com</p>
+                <a href="https://mail.qq.com/" target="_blank" rel="noopener noreferrer" class="btn">官方登录</a>
+            </div>
+            <div class="card">
+                <span class="badge domestic">国内</span>
+                <h3>阿里云邮箱 (个人版)</h3>
+                <p>@aliyun.com</p>
+                <a href="https://mail.aliyun.com/" target="_blank" rel="noopener noreferrer" class="btn">官方登录</a>
+            </div>
+            <div class="card">
+                <span class="badge domestic">国内</span>
+                <h3>新浪邮箱</h3>
+                <p>@sina.com / @sina.cn</p>
+                <a href="https://mail.sina.com.cn/" target="_blank" rel="noopener noreferrer" class="btn">官方登录</a>
+            </div>
+        </div>
+
+        <!-- 国际邮箱板块 -->
+        <h2>国际知名邮箱</h2>
+        <div class="grid">
+            <div class="card">
+                <span class="badge intl">国际</span>
+                <h3>Gmail (谷歌邮箱)</h3>
+                <p>@gmail.com</p>
+                <a href="https://mail.google.com/" target="_blank" rel="noopener noreferrer" class="btn">官方登录</a>
+            </div>
+            <div class="card">
+                <span class="badge intl">国际</span>
+                <h3>Outlook (微软邮箱)</h3>
+                <p>@outlook.com / @hotmail.com</p>
+                <a href="https://outlook.live.com/" target="_blank" rel="noopener noreferrer" class="btn">官方登录</a>
+            </div>
+            <div class="card">
+                <span class="badge intl">国际</span>
+                <h3>Yahoo Mail (雅虎)</h3>
+                <p>@yahoo.com</p>
+                <a href="https://mail.yahoo.com/" target="_blank" rel="noopener noreferrer" class="btn">官方登录</a>
+            </div>
+            <div class="card">
+                <span class="badge privacy">主打隐私</span>
+                <h3>Proton Mail</h3>
+                <p>端到端加密安全邮箱</p>
+                <a href="https://mail.proton.me/" target="_blank" rel="noopener noreferrer" class="btn">官方登录</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>⚠️ <strong>安全提示及免责声明</strong>：本网站仅提供各大邮箱官网的超链接导航。点击登录将跳转至各邮箱官方网站。本站不提供代理登录服务，绝不会收集、存储您的任何账号与密码信息，请认准跳转后的官方域名防范钓鱼网站。</p>
+    </footer>
+
+</body>
+</html>
